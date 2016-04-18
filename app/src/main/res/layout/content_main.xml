@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#3232cc"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/MainActivity" >
+
+    <EditText android:id="@+id/num1"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:hint="@string/num1"
+        android:textColorHint="#939393"/>
+
+    <EditText android:id="@+id/num2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num1"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentLeft="true"
+
+        android:hint="@string/num2"
+        android:textColorHint="#939393"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num2"
+        android:layout_alignParentLeft="true"
+
+        android:text="@string/Add"
+        android:onClick="sendMessage"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num2"
+        android:layout_alignParentRight="true"
+
+        android:text="@string/Sub"
+        android:onClick="sendMessage"/>
+
+    <EditText android:id="@+id/result"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/add"
+        android:hint="@string/result"
+        android:textColorHint="#939393"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simle Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="num1">Enter first number</string>
+    <string name="num2">Enter second number</string>
+    <string name="result">Result</string>
+    <string name="Add">Add</string>
+    <string name="Sub">Sub</string>
+</resources>
